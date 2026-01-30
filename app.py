@@ -1,6 +1,6 @@
-import streamlit as st
 import pandas as pd
 import plotly.express as px
+import streamlit as st
 
 # --- Configuração da Página ---
 # Define o título da página, o ícone e o layout para ocupar a largura inteira.
@@ -168,14 +168,8 @@ st.dataframe(df_filtrado)
 # --- Rodapé ---
 st.markdown("---")
 st.markdown(
-    """
-    <div style='text-align: center'>
-        <p>Projeto desenvolvido por <strong>thbrbz</strong></p>
-        <a href='https://github.com/thbrbz/imersaoDadosAlura' target='_blank'>
-            <img src='https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white' alt='GitHub'>
-        </a>
-    </div>
-    """,
-    unsafe_allow_stdio=True,
-    unsafe_allow_html=True,
+    "Projeto desenvolvido por Thiago Barboza ([**thbrbz**](https://github.com/thbrbz))"
+)
+st.markdown(
+    "[![GitHub](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/thbrbz/imersaoDadosAlura)"
 )
